@@ -1,12 +1,12 @@
 <template>
   <form name="login-form">
     <div class="mb-3">
-      <p>Username</p>
-      <input type="text" v-model="input.username" />
+      <label for="username">Username: </label>
+      <input type="text" id="username" v-model="input.username" />
     </div>
     <div class="mb-3">
-      <p>Password</p>
-      <input type="password" v-model="input.password" />
+      <label for="password">Password: </label>
+      <input type="password" id="password" v-model="input.password" />
     </div>
     <button class="btn btn-outline-dark" type="submit" v-on:click.prevent="login()">
       Login
